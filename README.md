@@ -8,7 +8,7 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 
 ---
 
-### Components
+### 💻 Components
 | Component         | Description                          |
 |------------------|----------------------------------|
 | **ESP32**        | WiFi-enabled microcontroller  |
@@ -73,8 +73,6 @@ Dashboard includes live **charts**, **gauges**, and customizable UI widgets! �
 | Arduino Code Uploaded | ✔️ |
 | MQTT Broker Running | ✔️ |
 | Node-RED Dashboard Ready | ✔️ |
-
----
 
 ---
 
