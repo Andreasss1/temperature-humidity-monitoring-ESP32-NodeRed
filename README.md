@@ -57,14 +57,6 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 
 ---
 
-## 📡 System Architecture
-
-+----------------+       +------------------+       +---------------------+
-|  ESP32 + DHT22 | --->  |   MQTT Broker    | --->  |  Node-RED Dashboard |
-+----------------+       +------------------+       +---------------------+
-
----
-
 ## 📊 Simple Dashboard Preview
 
 ![Node-RED Dashboard Preview](https://github.com/Andreasss1/temperature-humidity-monitoring-ESP32-NodeRed/blob/main/node-red-dashboard-preview.png)
@@ -83,3 +75,19 @@ Dashboard includes live **charts**, **gauges**, and customizable UI widgets! �
 | Node-RED Dashboard Ready | ✔️ |
 
 ---
+
+---
+
+<div align="center">
+
+## 📬 Need a Similar Project? Let's Collaborate!
+
+If you need a **custom IoT project** for **smart home, agriculture, industrial monitoring**, or other use cases,  
+I’m ready to assist you!  
+
+📧 **Reach out at:**  
+### andreas.sebayang9999@gmail.com  
+
+Let’s create something amazing together! 🚀
+
+</div>
