@@ -1,59 +1,80 @@
-# Monitoring Suhu dan Kelembaban dengan DHT22 & ESP32 via MQTT ke Node-RED Dashboard
+# 🌐 IoT Monitoring System: Temperature & Humidity with ESP32, DHT22, MQTT & Node-RED Dashboard
 
-## 📌 Deskripsi
-Proyek ini merupakan monitoring sederhana suhu dan kelembaban menggunakan sensor **DHT22** yang terhubung ke **ESP32**. Data dikirimkan ke **Node-RED** melalui **MQTT** menggunakan broker publik `broker.emqx.io` dan divisualisasikan menggunakan **Node-RED Dashboard**.
+## 🚀 About The Project
 
----
+This project is a **Smart Environmental Monitoring System** built using **ESP32** and **DHT22 Sensor** to measure **temperature** and **humidity** in real-time. Data is transmitted wirelessly via **MQTT Protocol** and visualized using an interactive **Node-RED Dashboard**.
 
-## 💻 Peralatan dan Komponen
-| No  | Komponen               | Keterangan |
-|----|------------------|----|
-| 1 | ESP32 Devkit | Mikrokontroler |
-| 2 | DHT22 | Sensor Suhu dan Kelembaban |
-| 3 | Kabel Jumper | Penghubung |
-| 4 | Breadboard | Perakitan |
+Perfect for **smart farming**, **greenhouses**, or indoor climate control projects! 🌱🌡️
 
 ---
 
-## 🌐 Arsitektur Sistem
-![Topology](./images/topology.png)
+---
+
+### Components
+| Component         | Description                          |
+|------------------|----------------------------------|
+| **ESP32**        | WiFi-enabled microcontroller  |
+| **DHT22**        | Temperature & Humidity Sensor |
+| **MQTT Broker**  | Data transport (e.g., Mosquitto) |
+| **Node-RED**     | Dashboard creation & data processing |
 
 ---
 
-## 📥 Arduino Code
-Source code ada di folder `Arduino_Code/`.
+## 🔗 Features at a Glance
+
+✅ Real-time temperature & humidity updates  
+✅ Wireless data transmission via MQTT  
+✅ Customizable & user-friendly dashboard  
+✅ Scalable to add more sensors (Soil Moisture, Light, etc.)  
+✅ Works in local network or cloud setup  
 
 ---
 
-## 🌐 MQTT Topic
-| Topic | Data |
-|----|----|
-| `12032343/dht22/suhu` | Suhu (°C) |
-| `12032343/dht22/kelembaban` | Kelembaban (%) |
+## 🛠️ How to Set Up
 
----
+### 1️⃣ Hardware Setup
+- Connect **DHT22** to ESP32:  
+    - VCC → 3.3V  
+    - GND → GND  
+    - DATA → GPIO17 (or your choice)
 
-## 📊 Tampilan Node-RED Dashboard
-![Dashboard Preview](./images/dashboard_preview.png)
-
----
-
-## 📦 Cara Menjalankan
-### 1️⃣ Upload Kode ke ESP32
-- Buka file `Monitoring_DHT22_ESP32.ino` di Arduino IDE.
-- Pastikan library sudah lengkap:
+### 2️⃣ ESP32 Code
+- Use **Arduino IDE** with ESP32 board support.
+- Install required libraries:
     - `DHT.h`
-    - `WiFi.h`
     - `PubSubClient.h`
-- Sesuaikan WiFi SSID & Password.
-- Upload ke ESP32.
+    - `WiFi.h`
 
-### 2️⃣ Import Flow ke Node-RED
-- Buka Node-RED di browser: `http://localhost:1880`.
-- Import file `flow.json` dari folder `NodeRED_Flow/`.
-- Klik **Deploy**.
+### 3️⃣ MQTT Broker
+- Install **Mosquitto** locally or use free broker like:
+    - `broker.hivemq.com` (public broker)
+    - Or set up your own server (local or cloud)
 
-### 3️⃣ Buka Dashboard
-- Akses: `http://localhost:1880/ui`.
+### 4️⃣ Node-RED Dashboard
+- Install Node-RED:
+    - `npm install -g --unsafe-perm node-red`
+- Add **Dashboard Node**:
+    - In Node-RED, go to Manage Palette → Install → Search `node-red-dashboard`
+- Import provided flow (if available) or build your own dashboard.
+
+---
+
+## 📊 Dashboard Preview (Example)
+
+| Data       | Value |
+|------------|-----|
+| Temperature| 29.5°C |
+| Humidity   | 67% |
+
+Dashboard includes live **charts**, **gauges**, and customizable UI widgets! 🎨
+
+---
+
+💻 Quick Start Checklist
+Step	✅ Status
+Hardware Wiring Completed	✔️
+Arduino Code Uploaded	✔️
+MQTT Broker Running	✔️
+Node-RED Dashboard Ready	✔️
 
 ---
