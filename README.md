@@ -59,7 +59,6 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 
 ## 📡 System Architecture
 
-```text
 +----------------+       +------------------+       +---------------------+
 |  ESP32 + DHT22 | --->  |   MQTT Broker    | --->  |  Node-RED Dashboard |
 +----------------+       +------------------+       +---------------------+
