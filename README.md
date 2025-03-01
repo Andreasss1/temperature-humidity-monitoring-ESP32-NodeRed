@@ -1,7 +1,6 @@
 # 🌐 IoT Monitoring System: Temperature & Humidity with ESP32, DHT22, MQTT & Node-RED Dashboard
 
 ## 🚀 About The Project
-
 This project is a **Smart Environmental Monitoring System** built using **ESP32** and **DHT22 Sensor** to measure **temperature** and **humidity** in real-time. Data is transmitted wirelessly via **MQTT Protocol** and visualized using an interactive **Node-RED Dashboard**.
 
 Perfect for **smart farming**, **greenhouses**, or indoor climate control projects! 🌱🌡️
@@ -19,7 +18,6 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 ---
 
 ## 🔗 Features at a Glance
-
 ✅ Real-time temperature & humidity updates  
 ✅ Wireless data transmission via MQTT  
 ✅ Customizable & user-friendly dashboard  
@@ -29,7 +27,6 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 ---
 
 ## 🛠️ How to Set Up
-
 ### 1️⃣ Hardware Setup
 - Connect **DHT22** to ESP32:  
     - VCC → 3.3V  
@@ -58,7 +55,6 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 ---
 
 ## 📊 Simple Dashboard Preview
-
 ![Node-RED Dashboard Preview](https://github.com/Andreasss1/temperature-humidity-monitoring-ESP32-NodeRed/blob/main/node-red-dashboard-preview.png)
 
 Dashboard includes live **charts**, **gauges**, and customizable UI widgets! 🎨
@@ -66,7 +62,6 @@ Dashboard includes live **charts**, **gauges**, and customizable UI widgets! �
 ---
 
 ## 💻 Quick Start Checklist
-
 | Step | ✅ Done |
 | --- | --- |
 | Hardware Connected | ✔️ |
@@ -79,7 +74,6 @@ Dashboard includes live **charts**, **gauges**, and customizable UI widgets! �
 <div align="center">
 
 ## 📬 Need a Similar Project? Let's Collaborate!
-
 If you need a **custom IoT project** for **smart home, agriculture, industrial monitoring**, or other use cases,  
 I’m ready to assist you!  
 
