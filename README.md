@@ -8,8 +8,6 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 
 ---
 
----
-
 ### Components
 | Component         | Description                          |
 |------------------|----------------------------------|
@@ -36,7 +34,7 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 - Connect **DHT22** to ESP32:  
     - VCC → 3.3V  
     - GND → GND  
-    - DATA → GPIO17 (or your choice)
+    - DATA → GPIO33
 
 ### 2️⃣ ESP32 Code
 - Use **Arduino IDE** with ESP32 board support.
@@ -59,7 +57,7 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 
 ---
 
-## 📊 Dashboard Preview (Example)
+## 📊 Simple Dashboard Preview
 
 | Data       | Value |
 |------------|-----|
@@ -70,7 +68,7 @@ Dashboard includes live **charts**, **gauges**, and customizable UI widgets! �
 
 ---
 
-💻 Quick Start Checklist
+## 💻 Quick Start Checklist
 Step	✅ Status
 Hardware Wiring Completed	✔️
 Arduino Code Uploaded	✔️
