@@ -59,10 +59,7 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 
 ## 📊 Simple Dashboard Preview
 
-| Data       | Value |
-|------------|-----|
-| Temperature| 29.5°C |
-| Humidity   | 67% |
+![Node-RED Dashboard Preview](https://github.com/Andreasss1/temperature-humidity-monitoring-ESP32-NodeRed/blob/main/node-red-dashboard-preview.png)
 
 Dashboard includes live **charts**, **gauges**, and customizable UI widgets! 🎨
 
