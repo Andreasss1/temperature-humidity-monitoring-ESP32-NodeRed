@@ -14,7 +14,7 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 | **ESP32**        | WiFi-enabled microcontroller  |
 | **DHT22**        | Temperature & Humidity Sensor |
 | **MQTT Broker**  | Data transport (e.g., Mosquitto) |
-| **Node-RED**     | Dashboard creation & data processing |
+| **Node-RED**     | Dashboard visualization & logic handling |
 
 ---
 
@@ -57,6 +57,15 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 
 ---
 
+## 📡 System Architecture
+
+```text
++----------------+       +------------------+       +---------------------+
+|  ESP32 + DHT22 | --->  |   MQTT Broker    | --->  |  Node-RED Dashboard |
++----------------+       +------------------+       +---------------------+
+
+---
+
 ## 📊 Simple Dashboard Preview
 
 ![Node-RED Dashboard Preview](https://github.com/Andreasss1/temperature-humidity-monitoring-ESP32-NodeRed/blob/main/node-red-dashboard-preview.png)
@@ -66,10 +75,12 @@ Dashboard includes live **charts**, **gauges**, and customizable UI widgets! �
 ---
 
 ## 💻 Quick Start Checklist
-Step	✅ Status
-Hardware Wiring Completed	✔️
-Arduino Code Uploaded	✔️
-MQTT Broker Running	✔️
-Node-RED Dashboard Ready	✔️
+
+| Step | ✅ Done |
+| --- | --- |
+| Hardware Connected | ✔️ |
+| Arduino Code Uploaded | ✔️ |
+| MQTT Broker Running | ✔️ |
+| Node-RED Dashboard Ready | ✔️ |
 
 ---
