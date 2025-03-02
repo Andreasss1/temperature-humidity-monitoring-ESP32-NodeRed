@@ -26,6 +26,15 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 
 ---
 
+## 💻 System Architecture
+![System Architecture Preview](https://github.com/Andreasss1/temperature-humidity-monitoring-ESP32-NodeRed/blob/main/System-Architecture.png)
+### Explanation
+- **ESP32 + DHT22**: Reads temperature & humidity data.
+- **MQTT Broker**: Acts as the communication protocol hub between ESP32 and Node-RED.
+- **Node-RED**: Subscribes to the sensor data topic, processes the data, and displays it on a web dashboard for Real-time data visualization for easy monitoring.
+### Quality of Service 1 (QoS1)
+
+
 ## 🛠️ How to Set Up
 ### 1️⃣ Hardware Setup
 - Connect **DHT22** to ESP32:  
