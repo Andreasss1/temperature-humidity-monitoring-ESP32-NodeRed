@@ -7,7 +7,7 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 
 ---
 
-### 💻 Components
+## 💻 Components
 | Component         | Description                          |
 |------------------|----------------------------------|
 | **ESP32**        | WiFi-enabled microcontroller  |
@@ -28,33 +28,40 @@ Perfect for **smart farming**, **greenhouses**, or indoor climate control projec
 
 ## 💻 System Architecture
 ![System Architecture Preview](https://github.com/Andreasss1/temperature-humidity-monitoring-ESP32-NodeRed/blob/main/System-Architecture.png)
-### Explanation
+#### Explanation
 - **ESP32 + DHT22**: Reads temperature & humidity data.
 - **MQTT Broker**: Acts as the communication protocol hub between ESP32 and Node-RED.
 - **Node-RED**: Subscribes to the sensor data topic, processes the data, and displays it on a web dashboard for Real-time data visualization for easy monitoring.
-### Quality of Service 1 (QoS1)
+#### Quality of Service 1 (QoS 1)
+![Quality of Service #1](https://github.com/Andreasss1/temperature-humidity-monitoring-ESP32-NodeRed/blob/main/QoS(1).png)
+- **Quality of Service (QoS) Level 1**:
+    - Message is guaranteed to be delivered **at least once**.
+    - The sender (ESP32) sends a message, and the broker must acknowledge (PUBACK) it.
+    - If no PUBACK is received, ESP32 will retry sending the message.
+- This is ideal for monitoring sensors in IoT where **data loss** should be minimized.
 
+---
 
 ## 🛠️ How to Set Up
-### 1️⃣ Hardware Setup
+#### 1️⃣ Hardware Setup
 - Connect **DHT22** to ESP32:  
     - VCC → 3.3V  
     - GND → GND  
     - DATA → GPIO33
 
-### 2️⃣ ESP32 Code
+#### 2️⃣ ESP32 Code
 - Use **Arduino IDE** with ESP32 board support.
 - Install required libraries:
     - `DHT.h`
     - `PubSubClient.h`
     - `WiFi.h`
 
-### 3️⃣ MQTT Broker
+#### 3️⃣ MQTT Broker
 - Install **Mosquitto** locally or use free broker like:
     - `broker.hivemq.com` (public broker)
     - Or set up your own server (local or cloud)
 
-### 4️⃣ Node-RED Dashboard
+#### 4️⃣ Node-RED Dashboard
 - Install Node-RED:
     - `npm install -g --unsafe-perm node-red`
 - Add **Dashboard Node**:
